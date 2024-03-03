@@ -1,3 +1,9 @@
+REACT REDUX SHOPPING CART
+- using reactjs/toolkit, react-redux for state management.
+- using tailwind for UI design.
+- using react-loader-spinner for loading animation.
+
+-----
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
