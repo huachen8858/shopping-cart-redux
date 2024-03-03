@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Header from "@/components/layout/header";
 import { useSelector } from "react-redux";
+import Link from "next/link";
 
 export default function CartPage() {
   const [totalCart, setTotalCart] = useState(0); // 購物車金額
@@ -17,7 +18,14 @@ export default function CartPage() {
   return (
     <>
       <Header />
-      <div>CartPage</div>
+      {cart && cart.length ? <div></div> : <div className="min-h-[80vh] flex flex-col justify-center items-center">
+        <h1 className="text-gray-800 font-bold text-xl mb-2">Your cart is empty</h1>
+        <Link href="/">
+          <button className="bg-blue-950 text-white rounded-lg font-bold px-8 py-2">
+            SHOP NOW
+          </button>
+        </Link>
+      </div>}
     </>
   );
 }
